@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zing MP3</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.0.0-web/css/all.min.css">
+</head>
+<body>
+    
+    <div id="main" class="main" style="background-image: url(./assets/img/main_bg-0.svg);">
+        <div class="main-sidebar">
+            <div class="sidebar__logo">
+                <img src="./assets/img/logo_dark.png" alt="Logo Zing MP3" />
+            </div>
+
+            <div class="sidebar__persional">
+                <ul class="list__persional">
+                    <li class="item__persional sidebar-item active-sidebar">
+                        <i class="fa-regular fa-circle-play"></i>
+                        <span>Cá Nhân</span>
+                    </li>
+                    <li class="item__persional sidebar-item">
+                        <i class="fa-solid fa-compact-disc"></i>
+                        <span>khám Phá</span>
+                    </li>
+                    <li class="item__persional sidebar-item">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>#zingchart</span>
+                        <div class="item__persional-icon-play"><i class="fa-solid fa-forward"></i></div>
+                    </li>
+                    <li class="item__persional sidebar-item">
+                        <i class="fa-solid fa-tower-broadcast"></i>
+                        <span>Radio</span>
+                        <div class="item__persional-icon-play"><i class="fa-solid fa-forward"></i></div>
+                    </li>
+                    <li class="item__persional sidebar-item">
+                        <i class="fa-solid fa-rectangle-list"></i>
+                        <span>Theo Dõi</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar__line"></div>
+
+            <div class="sidebar__library">
+                <div class="sidebar__library-top">
+                    <ul class="list-sidebar__library-top">
+                        <li class="item-sidebar__library-top sidebar-item">
+                            <i class="fa-solid fa-music"></i>
+                            <span>Nhạc Mới</span>
+                            <div class="item__persional-icon-play"><i class="fa-solid fa-forward"></i></div>
+                        </li>
+                        <li class="item-sidebar__library-top sidebar-item">
+                            <i class="fa-solid fa-icons"></i>
+                            <span>Thể Loại</span>
+                        </li>
+                        <li class="item-sidebar__library-top sidebar-item">
+                            <i class="fa-regular fa-star"></i>
+                            <span>Top 100</span>
+                        </li>
+                        <li class="item-sidebar__library-top sidebar-item">
+                            <i class="fa-solid fa-photo-film"></i>
+                            <span>MV</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar__library-center">
+                    <div class="sidebar__library-center--content">
+                        <span>Nghe nhạc không quảng cáo cùng kho nhạc VIP</span>
+                        <span class="sidebar__library-center--content-vip">Nâng cấp vip</span>
+                    </div>
+                </div>
+
+                <div class="sidebar__library-bot">
+                    <div class="sidebar__library-bot--heading">
+                        thư viện
+                        <i class="fa-solid fa-pencil"></i>
+                    </div>
+                    <ul class="sidebar__library-bot--list">
+                        <li class="sidebar__library-bot--item sidebar-item">
+                            <i class="fa-solid fa-microphone-lines"></i>
+                            <span>Bài hát</span>
+                        </li>
+                        <li class="sidebar__library-bot--item sidebar-item">
+                            <i class="fa-solid fa-file-audio"></i>
+                            <span>Playlist</span>
+                        </li>
+                        <li class="sidebar__library-bot--item sidebar-item">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>Gần đây</span>
+                        </li>
+                    </ul>
+                    <div class="sidebar__library-bot--extra">
+                        Replay
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="sidebar__library-bot--extra">
+                        Nhạc xuân
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="sidebar__library-bot--extra">
+                        Nhạc trung quốc
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar__line_bot"></div>
+
+            <div class="sidebar__create-list-new">
+                <i class="fa-solid fa-plus"></i>
+                <span>Tạo playlist mới</span>
+            </div>
+
+        </div>
+
+        <div class="main-container">
+            <div class="main-header-wrapper">
+                <div class="main-header">
+                    <div class="header-undo">
+                        <i class="fa-solid fa-arrow-left header-back--left"></i>
+                        <i class="fa-solid fa-arrow-right header-back--right"></i>
+                    </div>
+    
+                    <div class="header-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input class="header-search-input" type="text" placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV . . .">
+    
+                        <div class="header-search--sub">
+                            <div class="header-search--sub-title">Đề xuất cho bạn</div>
+                            <ul class="header-search--sub-list">
+                                <li class="header-search--sub-item">
+                                    <i class="fa-solid fa-left-right"></i>
+                                    Manchester United TOP 1 thế giới
+                                </li>
+                                <li class="header-search--sub-item">
+                                    <i class="fa-solid fa-left-right"></i>
+                                    Ai chung tình được mãi
+                                </li>
+                                <li class="header-search--sub-item">
+                                    <i class="fa-solid fa-left-right"></i>
+                                    là ai
+                                </li>
+                                <li class="header-search--sub-item">
+                                    <i class="fa-solid fa-left-right"></i>
+                                    Nếu em không về
+                                </li>
+                                <li class="header-search--sub-item">
+                                    <i class="fa-solid fa-left-right"></i>
+                                    Sơn Tùng MTP
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="header-right">
+                        <div class="header-right--theme">
+                            <i class="fa-solid fa-shirt"></i>
+                        </div>
+    
+                        <div class="header-right--upload">
+                            <i class="fa-solid fa-upload"></i>
+                        </div>
+    
+                        <div class="header-right--setting">
+                            <i class="fa-solid fa-gear"></i>
+                        </div>
+    
+                        <div class="header-right--user">
+                            <a href="#">
+                                <img class="header-right--user-img" src="./assets/img/avatar.jpg" alt="user">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-container__body-discover">
+                <div class="main-discover--slider-wrapper">
+                    <div class="main--discover--slider main--discover--slider-first">
+                        <img src="./assets/img/slider-1.jpg" alt="slider_1" />
+                    </div>
+                    <div class="main--discover--slider main--discover--slider-second">
+                        <img src="./assets/img/slider-2.jpg" alt="slider_2" />
+                    </div>
+                    <div class="main--discover--slider main--discover--slider-third">
+                        <img src="./assets/img/slider-3.jpg" alt="slider_3" />
+                    </div>
+                    <div class="main--discover--slider main--discover--slider-four">
+                        <img src="./assets/img/slider-4.jpg" alt="slider_4" />
+                    </div>
+                    <div class="main--discover--slider main--discover--slider-four">
+                        <img src="./assets/img/slider-5.jpg" alt="slider_5" />
+                    </div>
+                    <div class="main--discover--slider main--discover--slider-four">
+                        <img src="./assets/img/slider-6.jpg" alt="slider_6" />
+                    </div>
+                    <div class="main--discover--slider main--discover--slider-four">
+                        <img src="./assets/img/slider-7.jpg" alt="slider_7" />
+                    </div>
+
+                    <div class="main--discover-slider-left">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="main--discover-slider-right">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+
+                <div class="main-discover--playlist-wrapper">
+                    <h1 class="main-discover--playlist-title">Playlist</h1>
+                    <div class="main-discover--playlist-all">
+                        tất cả <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <div class="grid discover--playlist-wrapper">
+                        <div class="row discover--playlist">
+                            <div class="col l-2-4">
+                                <div class="discover--playlist-add">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <span>Tạo playlist mới</span>
+                                </div>
+                            </div>
+                            <div class="col l-2-4">
+                                <div class="discover--playlist-item">
+                                    <div class="discover--playlist-item--img-wrapper">
+                                        <div class="discover--playlist-item--img" style="background-image: url('./assets/img/playlist-1.webp');"></div>
+                                        <div class="discover--playlist-item--img-overlay">
+                                            <i class="fa-solid fa-xmark"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                    <div class="discover--playlist-item--wrapper-name">
+                                        <div class="discover--playlist-item--title">Replay</div>
+                                        <div class="discover--playlist-item--name">Đinh Hữu Tài</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2-4">
+                                <div class="discover--playlist-item">
+                                    <div class="discover--playlist-item--img-wrapper">
+                                        <div class="discover--playlist-item--img" style="background-image: url('./assets/img/playlist-2.webp');"></div>
+                                        <div class="discover--playlist-item--img-overlay">
+                                            <i class="fa-solid fa-xmark"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                    <div class="discover--playlist-item--wrapper-name">
+                                        <div class="discover--playlist-item--title">4U - On Repeat</div>
+                                        <div class="discover--playlist-item--name">Zing MP3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2-4">
+                                <div class="discover--playlist-item">
+                                    <div class="discover--playlist-item--img-wrapper">
+                                        <div class="discover--playlist-item--img" style="background-image: url('./assets/img/playlist-3.webp');"></div>
+                                        <div class="discover--playlist-item--img-overlay">
+                                            <i class="fa-solid fa-xmark"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                    <div class="discover--playlist-item--wrapper-name">
+                                        <div class="discover--playlist-item--title">#zingchart</div>
+                                        <div class="discover--playlist-item--name">Zing MP3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2-4">
+                                <div class="discover--playlist-item">
+                                    <div class="discover--playlist-item--img-wrapper">
+                                        <div class="discover--playlist-item--img" style="background-image: url('./assets/img/playlist-4.webp');"></div>
+                                        <div class="discover--playlist-item--img-overlay">
+                                            <i class="fa-solid fa-xmark"></i>
+                                            <i class="fa-regular fa-circle-play"></i>
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </div>
+                                    </div>
+                                    <div class="discover--playlist-item--wrapper-name">
+                                        <div class="discover--playlist-item--title">Nhạc của Đinh Tài</div>
+                                        <div class="discover--playlist-item--name">Zing MP3</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-discover--mv-wrapper">
+                    <h1 class="main-discover--playlist-title">MV</h1>
+                    <div class="main-discover--playlist-all">
+                        tất cả <i class="fa-solid fa-angle-right"></i>
+                    </div>
+
+                    <div class="grid discover--mv-wrapper">
+                        <div class="row discover--mv">
+                            <div class="col l-4 discover--mv-item">
+                                <div class="discover--mv-item--img-wrapper">
+                                    <div class="discover--mv-item--img" style="background-image: url(./assets/img/mv-1.webp);"></div>
+                                    <div class="discover--mv-item--img-overlay">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="discover--mv-item--info-wrapper">
+                                    <div class="discover--mv-item--info-avatar">
+                                        <img src="./assets/img/mv-avatar-1.jpg" alt="avatar" class="discover--mv-item--info-avatar-img">
+                                    </div>
+                                    <div class="discover--mv-item--info-name">
+                                        <div class="discover--mv-item--info-name-music">Thay Tôi Yêu Cô Ấy</div>
+                                        <div class="discover--mv-item--info-name-singer">Thanh Hưng</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4">
+                                <div class="discover--mv-item--img-wrapper">
+                                    <div class="discover--mv-item--img" style="background-image: url(./assets/img/mv-2.webp);"></div>
+                                    <div class="discover--mv-item--img-overlay">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="discover--mv-item--info-wrapper">
+                                    <div class="discover--mv-item--info-avatar">
+                                        <img src="./assets/img/mv-avatar-2.jpg" alt="avatar" class="discover--mv-item--info-avatar-img">
+                                    </div>
+                                    <div class="discover--mv-item--info-name">
+                                        <div class="discover--mv-item--info-name-music">Đếm Cừu</div>
+                                        <div class="discover--mv-item--info-name-singer">Han Sara, Kay Trần</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4">
+                                <div class="discover--mv-item--img-wrapper">
+                                    <div class="discover--mv-item--img" style="background-image: url(./assets/img/mv-3.webp);"></div>
+                                    <div class="discover--mv-item--img-overlay">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="discover--mv-item--info-wrapper">
+                                    <div class="discover--mv-item--info-avatar">
+                                        <img src="./assets/img/mv-avatar-3.jpg" alt="avatar" class="discover--mv-item--info-avatar-img">
+                                    </div>
+                                    <div class="discover--mv-item--info-name">
+                                        <div class="discover--mv-item--info-name-music">Que Va</div>
+                                        <div class="discover--mv-item--info-name-singer">Alex Sensation, Ozuna</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="main-discover--singer-wrapper">
+                    <h1 class="main-discover--playlist-title">Nghệ Sĩ</h1>
+                    <div class="main-discover--playlist-all">
+                        tất cả <i class="fa-solid fa-angle-right"></i>
+                    </div>
+
+                    <div class="grid discover--singer-wrapper">
+                        <div class="row discover--singer">
+                            <div class="col l-2-4 discover--singer-item">
+                                <div class="discover--singer-item--wrapper-img">
+                                    <div class="discover--singer-item--img" style="background-image: url(./assets/img/singer-1.webp);"></div>
+                                    <div class="discover--singer-item--img-overlay">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+
+                                <div class="discover--singer-item--info">
+                                    <div class="discover--singer-item--info-name">Mr.Siro</div>
+                                    <div class="discover--singer-item--info-follow">757K quan tâm</div>
+                                </div>
+
+                                <div class="discover--singer-item--ran">
+                                    <i class="fa-solid fa-shuffle"></i>
+                                    góc nhạc
+                                </div>
+                            </div>
+                            <div class="col l-2-4 discover--singer-item">
+                                <div class="discover--singer-item--wrapper-img">
+                                    <div class="discover--singer-item--img" style="background-image: url(./assets/img/singer-2.webp);"></div>
+                                    <div class="discover--singer-item--img-overlay">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+
+                                <div class="discover--singer-item--info">
+                                    <div class="discover--singer-item--info-name">Bích Phương</div>
+                                    <div class="discover--singer-item--info-follow">381K quan tâm</div>
+                                </div>
+
+                                <div class="discover--singer-item--ran">
+                                    <i class="fa-solid fa-shuffle"></i>
+                                    góc nhạc
+                                </div>
+                            </div>
+                            <div class="col l-2-4 discover--singer-item">
+                                <div class="discover--singer-item--wrapper-img">
+                                    <div class="discover--singer-item--img" style="background-image: url(./assets/img/singer-3.webp);"></div>
+                                    <div class="discover--singer-item--img-overlay">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+
+                                <div class="discover--singer-item--info">
+                                    <div class="discover--singer-item--info-name">SOOBIN</div>
+                                    <div class="discover--singer-item--info-follow">466K quan tâm</div>
+                                </div>
+
+                                <div class="discover--singer-item--ran">
+                                    <i class="fa-solid fa-shuffle"></i>
+                                    góc nhạc
+                                </div>
+                            </div>
+                            <div class="col l-2-4 discover--singer-item">
+                                <div class="discover--singer-item--wrapper-img">
+                                    <div class="discover--singer-item--img" style="background-image: url(./assets/img/singer-4.webp);"></div>
+                                    <div class="discover--singer-item--img-overlay">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+
+                                <div class="discover--singer-item--info">
+                                    <div class="discover--singer-item--info-name">Sơn Tùng MTP</div>
+                                    <div class="discover--singer-item--info-follow">2.2M quan tâm</div>
+                                </div>
+
+                                <div class="discover--singer-item--ran">
+                                    <i class="fa-solid fa-shuffle"></i>
+                                    góc nhạc
+                                </div>
+                            </div>
+                            <div class="col l-2-4 discover--singer-item">
+                                <div class="discover--singer-item--wrapper-img">
+                                    <div class="discover--singer-item--img" style="background-image: url(./assets/img/singer-5.webp);"></div>
+                                    <div class="discover--singer-item--img-overlay">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+
+                                <div class="discover--singer-item--info">
+                                    <div class="discover--singer-item--info-name">Hương Ly</div>
+                                    <div class="discover--singer-item--info-follow">604K quan tâm</div>
+                                </div>
+
+                                <div class="discover--singer-item--ran">
+                                    <i class="fa-solid fa-shuffle"></i>
+                                    góc nhạc
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="main-container__body-personal">
+                <div class="main-container--profile">
+                    <a class="main-container--profile-img-wrapper" href="https://www.facebook.com/dinhhuutai317">
+                        <img alt="avatar" src="./assets/img/avatar.jpg" class="main-container--profile-img" />
+                    </a>
+                    <div class="main-container--profile-name">Đinh Hữu Marcus Tài</div>
+                    <div class="main-container--profile-vip">
+                        <div class="main-container--profile-vip-up">nâng cấp vip</div>
+                        <div class="main-container--profile-vip-write">nhập code vip</div>
+                        <div class="main-container--profile-vip-dot"><i class="fa-solid fa-ellipsis"></i></div>
+                    </div>
+                </div>
+
+                <div class="main-container--music-option">
+                    <ul class="main-container--music-option-list">
+                        <li class="main-container--music-option-item">tổng quan</li>
+                        <li class="main-container--music-option-item">bài hát</li>
+                        <li class="main-container--music-option-item">playlist</li>
+                        <li class="main-container--music-option-item">nghệ sĩ</li>
+                        <li class="main-container--music-option-item"><i class="fa-solid fa-ellipsis"></i></li>
+                        <div class="main-container--music-option-action"></div>
+                    </ul>
+                </div>
+
+                <div class="main-container--music-all-song">
+                    <div class="main-container--music-all-song-title-wrapper">
+                        <div class="main-container--music-all-song-title">
+                            <div class="main-container--music-all-song-title-title">Bài Hát</div>
+                            <div class="main-container--music-all-song-title-all">
+                                Tất cả
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </div>
+                        <div class="main-container--music-all-song-up">
+                            <div class="main-container--music-all-song-up-upload">
+                                <i class="fa-solid fa-upload"></i>
+                                tải lên
+                            </div>
+                            <div class="main-container--music-all-song-up-play-all">
+                                <i class="fa-solid fa-play icon-play-all"></i>
+                                <i class="fas fa-pause icon-pause-all"></i>
+                                phát tất cả
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid container--music-all">
+                        <div class="row">
+                            <div class="col l-4 container--music-all-img">
+                                <div class="container--music-all-img-list">
+                                    <!-- <div class="container--music-all-img-item container--music-all-img-item-first" style="background-image: url('./assets/img/music_aichungtinhduocmai.jpg');"></div>
+                                    <div class="container--music-all-img-item container--music-all-img-item-four" style="background-image: url('./assets/img/music_antinhsangtrang.jpg');"></div>
+                                    <div class="container--music-all-img-item container--music-all-img-item-four" style="background-image: url('./assets/img/music_cuoctinhkhongtronven.jpg');"></div>
+                                    <div class="container--music-all-img-item container--music-all-img-item-third" style="background-image: url('./assets/img/music_dunglonhecoanhday.jpg');"></div>
+                                    <div class="container--music-all-img-item container--music-all-img-item-second" style="background-image: url('./assets/img/music_duyenduyensoso.jpg');"></div> -->
+                                </div>
+                            </div>
+
+                            <div class="col l-8 container--music-all-list">
+                                <div class="container--music-all-item">
+                                    <div class="container--music-all-item-info-wrapper">
+                                        <div class="container--music-all-item-img-wrapper">
+                                            <div class="container--music-all-item-img" style="background-image: url(./assets/img/music_aichungtinhduocmai.jpg);"></div>
+                                            <div class="container--music-all-item-img-icon"><i class="fa-solid fa-play"></i></div>
+                                        </div>
+                                        <div class="container--music-all-item-info">
+                                            <div class="container--music-all-item-name">Ai chung tình được mãi</div>
+                                            <div class="container--music-all-item-singer">Đinh Tùng Huy</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="container--music-all-item-option">
+                                        <div class="container--music-all-item-film">
+                                            <i class="fa-solid fa-film"></i>
+                                        </div>
+
+                                        <div class="container--music-all-item-micro">
+                                            <i class="fa-solid fa-microphone"></i>
+                                        </div>
+
+                                        <div class="container--music-all-item-favourite-wrapper">
+                                            <div class="container--music-all-item-favourite">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </div>
+                                            <div class="container--music-all-item-no-favourite">
+                                                <i class="fa-regular fa-heart"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="container--music-all-item-duration">
+                                            <div class="container--music-all-item-duration-time">05:41</div>
+                                            <div class="container--music-all-item-duration-option"><i class="fa-solid fa-ellipsis"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-discover--playlist-wrapper">
+                        <h1 class="main-discover--playlist-title">Playlist</h1>
+                        <div class="main-discover--playlist-all">
+                            tất cả <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                        <div class="grid discover--playlist-wrapper">
+                            <div class="row discover--playlist">
+                                <div class="col l-2-4">
+                                    <div class="discover--playlist-add">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <span>Tạo playlist mới</span>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4">
+                                    <div class="discover--playlist-item">
+                                        <div class="discover--playlist-item--img-wrapper">
+                                            <div class="discover--playlist-item--img" style="background-image: url('./assets/img/playlist-1.webp');"></div>
+                                            <div class="discover--playlist-item--img-overlay">
+                                                <i class="fa-solid fa-xmark"></i>
+                                                <i class="fa-regular fa-circle-play"></i>
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </div>
+                                        </div>
+                                        <div class="discover--playlist-item--wrapper-name">
+                                            <div class="discover--playlist-item--title">Replay</div>
+                                            <div class="discover--playlist-item--name">Đinh Hữu Tài</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4">
+                                    <div class="discover--playlist-item">
+                                        <div class="discover--playlist-item--img-wrapper">
+                                            <div class="discover--playlist-item--img" style="background-image: url('./assets/img/playlist-2.webp');"></div>
+                                            <div class="discover--playlist-item--img-overlay">
+                                                <i class="fa-solid fa-xmark"></i>
+                                                <i class="fa-regular fa-circle-play"></i>
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </div>
+                                        </div>
+                                        <div class="discover--playlist-item--wrapper-name">
+                                            <div class="discover--playlist-item--title">4U - On Repeat</div>
+                                            <div class="discover--playlist-item--name">Zing MP3</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4">
+                                    <div class="discover--playlist-item">
+                                        <div class="discover--playlist-item--img-wrapper">
+                                            <div class="discover--playlist-item--img" style="background-image: url('./assets/img/playlist-3.webp');"></div>
+                                            <div class="discover--playlist-item--img-overlay">
+                                                <i class="fa-solid fa-xmark"></i>
+                                                <i class="fa-regular fa-circle-play"></i>
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </div>
+                                        </div>
+                                        <div class="discover--playlist-item--wrapper-name">
+                                            <div class="discover--playlist-item--title">#zingchart</div>
+                                            <div class="discover--playlist-item--name">Zing MP3</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4">
+                                    <div class="discover--playlist-item">
+                                        <div class="discover--playlist-item--img-wrapper">
+                                            <div class="discover--playlist-item--img" style="background-image: url('./assets/img/playlist-4.webp');"></div>
+                                            <div class="discover--playlist-item--img-overlay">
+                                                <i class="fa-solid fa-xmark"></i>
+                                                <i class="fa-regular fa-circle-play"></i>
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </div>
+                                        </div>
+                                        <div class="discover--playlist-item--wrapper-name">
+                                            <div class="discover--playlist-item--title">Nhạc của Đinh Tài</div>
+                                            <div class="discover--playlist-item--name">Zing MP3</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="main-discover--mv-wrapper">
+                        <h1 class="main-discover--playlist-title">MV</h1>
+                        <div class="main-discover--playlist-all">
+                            tất cả <i class="fa-solid fa-angle-right"></i>
+                        </div>
+    
+                        <div class="grid discover--mv-wrapper">
+                            <div class="row discover--mv">
+                                <div class="col l-4 discover--mv-item">
+                                    <div class="discover--mv-item--img-wrapper">
+                                        <div class="discover--mv-item--img" style="background-image: url(./assets/img/mv-1.webp);"></div>
+                                        <div class="discover--mv-item--img-overlay">
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </div>
+                                    </div>
+                                    <div class="discover--mv-item--info-wrapper">
+                                        <div class="discover--mv-item--info-avatar">
+                                            <img src="./assets/img/mv-avatar-1.jpg" alt="avatar" class="discover--mv-item--info-avatar-img">
+                                        </div>
+                                        <div class="discover--mv-item--info-name">
+                                            <div class="discover--mv-item--info-name-music">Thay Tôi Yêu Cô Ấy</div>
+                                            <div class="discover--mv-item--info-name-singer">Thanh Hưng</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-4">
+                                    <div class="discover--mv-item--img-wrapper">
+                                        <div class="discover--mv-item--img" style="background-image: url(./assets/img/mv-2.webp);"></div>
+                                        <div class="discover--mv-item--img-overlay">
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </div>
+                                    </div>
+                                    <div class="discover--mv-item--info-wrapper">
+                                        <div class="discover--mv-item--info-avatar">
+                                            <img src="./assets/img/mv-avatar-2.jpg" alt="avatar" class="discover--mv-item--info-avatar-img">
+                                        </div>
+                                        <div class="discover--mv-item--info-name">
+                                            <div class="discover--mv-item--info-name-music">Đếm Cừu</div>
+                                            <div class="discover--mv-item--info-name-singer">Han Sara, Kay Trần</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-4">
+                                    <div class="discover--mv-item--img-wrapper">
+                                        <div class="discover--mv-item--img" style="background-image: url(./assets/img/mv-3.webp);"></div>
+                                        <div class="discover--mv-item--img-overlay">
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </div>
+                                    </div>
+                                    <div class="discover--mv-item--info-wrapper">
+                                        <div class="discover--mv-item--info-avatar">
+                                            <img src="./assets/img/mv-avatar-3.jpg" alt="avatar" class="discover--mv-item--info-avatar-img">
+                                        </div>
+                                        <div class="discover--mv-item--info-name">
+                                            <div class="discover--mv-item--info-name-music">Que Va</div>
+                                            <div class="discover--mv-item--info-name-singer">Alex Sensation, Ozuna</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="main-discover--singer-wrapper">
+                        <h1 class="main-discover--playlist-title">Nghệ Sĩ</h1>
+                        <div class="main-discover--playlist-all">
+                            tất cả <i class="fa-solid fa-angle-right"></i>
+                        </div>
+    
+                        <div class="grid discover--singer-wrapper">
+                            <div class="row discover--singer">
+                                <div class="col l-2-4 discover--singer-item">
+                                    <div class="discover--singer-item--wrapper-img">
+                                        <div class="discover--singer-item--img" style="background-image: url(./assets/img/singer-1.webp);"></div>
+                                        <div class="discover--singer-item--img-overlay">
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </div>
+                                    </div>
+    
+                                    <div class="discover--singer-item--info">
+                                        <div class="discover--singer-item--info-name">Mr.Siro</div>
+                                        <div class="discover--singer-item--info-follow">757K quan tâm</div>
+                                    </div>
+    
+                                    <div class="discover--singer-item--ran">
+                                        <i class="fa-solid fa-shuffle"></i>
+                                        góc nhạc
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 discover--singer-item">
+                                    <div class="discover--singer-item--wrapper-img">
+                                        <div class="discover--singer-item--img" style="background-image: url(./assets/img/singer-2.webp);"></div>
+                                        <div class="discover--singer-item--img-overlay">
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </div>
+                                    </div>
+    
+                                    <div class="discover--singer-item--info">
+                                        <div class="discover--singer-item--info-name">Bích Phương</div>
+                                        <div class="discover--singer-item--info-follow">381K quan tâm</div>
+                                    </div>
+    
+                                    <div class="discover--singer-item--ran">
+                                        <i class="fa-solid fa-shuffle"></i>
+                                        góc nhạc
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 discover--singer-item">
+                                    <div class="discover--singer-item--wrapper-img">
+                                        <div class="discover--singer-item--img" style="background-image: url(./assets/img/singer-3.webp);"></div>
+                                        <div class="discover--singer-item--img-overlay">
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </div>
+                                    </div>
+    
+                                    <div class="discover--singer-item--info">
+                                        <div class="discover--singer-item--info-name">SOOBIN</div>
+                                        <div class="discover--singer-item--info-follow">466K quan tâm</div>
+                                    </div>
+    
+                                    <div class="discover--singer-item--ran">
+                                        <i class="fa-solid fa-shuffle"></i>
+                                        góc nhạc
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 discover--singer-item">
+                                    <div class="discover--singer-item--wrapper-img">
+                                        <div class="discover--singer-item--img" style="background-image: url(./assets/img/singer-4.webp);"></div>
+                                        <div class="discover--singer-item--img-overlay">
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </div>
+                                    </div>
+    
+                                    <div class="discover--singer-item--info">
+                                        <div class="discover--singer-item--info-name">Sơn Tùng MTP</div>
+                                        <div class="discover--singer-item--info-follow">2.2M quan tâm</div>
+                                    </div>
+    
+                                    <div class="discover--singer-item--ran">
+                                        <i class="fa-solid fa-shuffle"></i>
+                                        góc nhạc
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 discover--singer-item">
+                                    <div class="discover--singer-item--wrapper-img">
+                                        <div class="discover--singer-item--img" style="background-image: url(./assets/img/singer-5.webp);"></div>
+                                        <div class="discover--singer-item--img-overlay">
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </div>
+                                    </div>
+    
+                                    <div class="discover--singer-item--info">
+                                        <div class="discover--singer-item--info-name">Hương Ly</div>
+                                        <div class="discover--singer-item--info-follow">604K quan tâm</div>
+                                    </div>
+    
+                                    <div class="discover--singer-item--ran">
+                                        <i class="fa-solid fa-shuffle"></i>
+                                        góc nhạc
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                </div>
+
+                <div class="main-container--list-music">
+                    <div class="main-container--music-all-song-title-wrapper">
+                        <div class="main-container--music-all-song-title">
+                            <div class="main-container--music-all-song-title-title">Bài Hát</div>
+                        </div>
+                        <div class="main-container--music-all-song-up">
+                            <div class="main-container--music-all-song-up-upload">
+                                <i class="fa-solid fa-upload"></i>
+                                tải lên
+                            </div>
+                            <div class="main-container--music-all-song-up-play-all">
+                                <i class="fa-solid fa-play icon-play-all"></i>
+                                <i class="fas fa-pause icon-pause-all"></i>
+                                phát tất cả
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container--music-list-song">
+                        <div class="container--music-all-item">
+                            <div class="container--music-all-item-info-wrapper">
+                                <div class="container--music-all-item-img-wrapper">
+                                    <div class="container--music-all-item-img" style="background-image: url(./assets/img/music_aichungtinhduocmai.jpg);"></div>
+                                    <div class="container--music-all-item-img-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <div class="container--music-all-item-info">
+                                    <div class="container--music-all-item-name">Ai chung tình được mãi</div>
+                                    <div class="container--music-all-item-singer">Đinh Tùng Huy</div>
+                                </div>
+                            </div>
+
+                            <div class="container--music-all-item-option">
+                                <div class="container--music-all-item-film">
+                                    <i class="fa-solid fa-film"></i>
+                                </div>
+
+                                <div class="container--music-all-item-micro">
+                                    <i class="fa-solid fa-microphone"></i>
+                                </div>
+
+                                <div class="container--music-all-item-favourite-wrapper">
+                                    <div class="container--music-all-item-favourite">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                    <div class="container--music-all-item-no-favourite">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div>
+
+                                <div class="container--music-all-item-duration">
+                                    <div class="container--music-all-item-duration-time">05:41</div>
+                                    <div class="container--music-all-item-duration-option"><i class="fa-solid fa-ellipsis"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-container--playlist">
+                    <div class="main-discover--playlist-wrapper">
+                        <h1 class="main-discover--playlist-title">Playlist</h1>
+                        <div class="main-discover--playlist-all">
+                            tất cả <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                        <div class="grid discover--playlist-wrapper">
+                            <div class="row discover--playlist">
+                                <div class="col l-2-4">
+                                    <div class="discover--playlist-add">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <span>Tạo playlist mới</span>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4">
+                                    <div class="discover--playlist-item">
+                                        <div class="discover--playlist-item--img-wrapper">
+                                            <div class="discover--playlist-item--img" style="background-image: url('./assets/img/playlist-1.webp');"></div>
+                                            <div class="discover--playlist-item--img-overlay">
+                                                <i class="fa-solid fa-xmark"></i>
+                                                <i class="fa-regular fa-circle-play"></i>
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </div>
+                                        </div>
+                                        <div class="discover--playlist-item--wrapper-name">
+                                            <div class="discover--playlist-item--title">Replay</div>
+                                            <div class="discover--playlist-item--name">Đinh Hữu Tài</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4">
+                                    <div class="discover--playlist-item">
+                                        <div class="discover--playlist-item--img-wrapper">
+                                            <div class="discover--playlist-item--img" style="background-image: url('./assets/img/playlist-2.webp');"></div>
+                                            <div class="discover--playlist-item--img-overlay">
+                                                <i class="fa-solid fa-xmark"></i>
+                                                <i class="fa-regular fa-circle-play"></i>
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </div>
+                                        </div>
+                                        <div class="discover--playlist-item--wrapper-name">
+                                            <div class="discover--playlist-item--title">4U - On Repeat</div>
+                                            <div class="discover--playlist-item--name">Zing MP3</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4">
+                                    <div class="discover--playlist-item">
+                                        <div class="discover--playlist-item--img-wrapper">
+                                            <div class="discover--playlist-item--img" style="background-image: url('./assets/img/playlist-3.webp');"></div>
+                                            <div class="discover--playlist-item--img-overlay">
+                                                <i class="fa-solid fa-xmark"></i>
+                                                <i class="fa-regular fa-circle-play"></i>
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </div>
+                                        </div>
+                                        <div class="discover--playlist-item--wrapper-name">
+                                            <div class="discover--playlist-item--title">#zingchart</div>
+                                            <div class="discover--playlist-item--name">Zing MP3</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4">
+                                    <div class="discover--playlist-item">
+                                        <div class="discover--playlist-item--img-wrapper">
+                                            <div class="discover--playlist-item--img" style="background-image: url('./assets/img/playlist-4.webp');"></div>
+                                            <div class="discover--playlist-item--img-overlay">
+                                                <i class="fa-solid fa-xmark"></i>
+                                                <i class="fa-regular fa-circle-play"></i>
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </div>
+                                        </div>
+                                        <div class="discover--playlist-item--wrapper-name">
+                                            <div class="discover--playlist-item--title">Nhạc của Đinh Tài</div>
+                                            <div class="discover--playlist-item--name">Zing MP3</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="main-discover--mv-wrapper">
+                        <h1 class="main-discover--playlist-title">MV</h1>
+                        <div class="main-discover--playlist-all">
+                            tất cả <i class="fa-solid fa-angle-right"></i>
+                        </div>
+    
+                        <div class="grid discover--mv-wrapper">
+                            <div class="row discover--mv">
+                                <div class="col l-4 discover--mv-item">
+                                    <div class="discover--mv-item--img-wrapper">
+                                        <div class="discover--mv-item--img" style="background-image: url(./assets/img/mv-1.webp);"></div>
+                                        <div class="discover--mv-item--img-overlay">
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </div>
+                                    </div>
+                                    <div class="discover--mv-item--info-wrapper">
+                                        <div class="discover--mv-item--info-avatar">
+                                            <img src="./assets/img/mv-avatar-1.jpg" alt="avatar" class="discover--mv-item--info-avatar-img">
+                                        </div>
+                                        <div class="discover--mv-item--info-name">
+                                            <div class="discover--mv-item--info-name-music">Thay Tôi Yêu Cô Ấy</div>
+                                            <div class="discover--mv-item--info-name-singer">Thanh Hưng</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-4">
+                                    <div class="discover--mv-item--img-wrapper">
+                                        <div class="discover--mv-item--img" style="background-image: url(./assets/img/mv-2.webp);"></div>
+                                        <div class="discover--mv-item--img-overlay">
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </div>
+                                    </div>
+                                    <div class="discover--mv-item--info-wrapper">
+                                        <div class="discover--mv-item--info-avatar">
+                                            <img src="./assets/img/mv-avatar-2.jpg" alt="avatar" class="discover--mv-item--info-avatar-img">
+                                        </div>
+                                        <div class="discover--mv-item--info-name">
+                                            <div class="discover--mv-item--info-name-music">Đếm Cừu</div>
+                                            <div class="discover--mv-item--info-name-singer">Han Sara, Kay Trần</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-4">
+                                    <div class="discover--mv-item--img-wrapper">
+                                        <div class="discover--mv-item--img" style="background-image: url(./assets/img/mv-3.webp);"></div>
+                                        <div class="discover--mv-item--img-overlay">
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </div>
+                                    </div>
+                                    <div class="discover--mv-item--info-wrapper">
+                                        <div class="discover--mv-item--info-avatar">
+                                            <img src="./assets/img/mv-avatar-3.jpg" alt="avatar" class="discover--mv-item--info-avatar-img">
+                                        </div>
+                                        <div class="discover--mv-item--info-name">
+                                            <div class="discover--mv-item--info-name-music">Que Va</div>
+                                            <div class="discover--mv-item--info-name-singer">Alex Sensation, Ozuna</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div class="main-container--singer">
+                    <div class="main-discover--singer-wrapper">
+                        <h1 class="main-discover--playlist-title">Nghệ Sĩ</h1>
+                        <div class="main-discover--playlist-all">
+                            tất cả <i class="fa-solid fa-angle-right"></i>
+                        </div>
+    
+                        <div class="grid discover--singer-wrapper">
+                            <div class="row discover--singer">
+                                <div class="col l-2-4 discover--singer-item">
+                                    <div class="discover--singer-item--wrapper-img">
+                                        <div class="discover--singer-item--img" style="background-image: url(./assets/img/singer-1.webp);"></div>
+                                        <div class="discover--singer-item--img-overlay">
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </div>
+                                    </div>
+    
+                                    <div class="discover--singer-item--info">
+                                        <div class="discover--singer-item--info-name">Mr.Siro</div>
+                                        <div class="discover--singer-item--info-follow">757K quan tâm</div>
+                                    </div>
+    
+                                    <div class="discover--singer-item--ran">
+                                        <i class="fa-solid fa-shuffle"></i>
+                                        góc nhạc
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 discover--singer-item">
+                                    <div class="discover--singer-item--wrapper-img">
+                                        <div class="discover--singer-item--img" style="background-image: url(./assets/img/singer-2.webp);"></div>
+                                        <div class="discover--singer-item--img-overlay">
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </div>
+                                    </div>
+    
+                                    <div class="discover--singer-item--info">
+                                        <div class="discover--singer-item--info-name">Bích Phương</div>
+                                        <div class="discover--singer-item--info-follow">381K quan tâm</div>
+                                    </div>
+    
+                                    <div class="discover--singer-item--ran">
+                                        <i class="fa-solid fa-shuffle"></i>
+                                        góc nhạc
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 discover--singer-item">
+                                    <div class="discover--singer-item--wrapper-img">
+                                        <div class="discover--singer-item--img" style="background-image: url(./assets/img/singer-3.webp);"></div>
+                                        <div class="discover--singer-item--img-overlay">
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </div>
+                                    </div>
+    
+                                    <div class="discover--singer-item--info">
+                                        <div class="discover--singer-item--info-name">SOOBIN</div>
+                                        <div class="discover--singer-item--info-follow">466K quan tâm</div>
+                                    </div>
+    
+                                    <div class="discover--singer-item--ran">
+                                        <i class="fa-solid fa-shuffle"></i>
+                                        góc nhạc
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 discover--singer-item">
+                                    <div class="discover--singer-item--wrapper-img">
+                                        <div class="discover--singer-item--img" style="background-image: url(./assets/img/singer-4.webp);"></div>
+                                        <div class="discover--singer-item--img-overlay">
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </div>
+                                    </div>
+    
+                                    <div class="discover--singer-item--info">
+                                        <div class="discover--singer-item--info-name">Sơn Tùng MTP</div>
+                                        <div class="discover--singer-item--info-follow">2.2M quan tâm</div>
+                                    </div>
+    
+                                    <div class="discover--singer-item--ran">
+                                        <i class="fa-solid fa-shuffle"></i>
+                                        góc nhạc
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 discover--singer-item">
+                                    <div class="discover--singer-item--wrapper-img">
+                                        <div class="discover--singer-item--img" style="background-image: url(./assets/img/singer-5.webp);"></div>
+                                        <div class="discover--singer-item--img-overlay">
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </div>
+                                    </div>
+    
+                                    <div class="discover--singer-item--info">
+                                        <div class="discover--singer-item--info-name">Hương Ly</div>
+                                        <div class="discover--singer-item--info-follow">604K quan tâm</div>
+                                    </div>
+    
+                                    <div class="discover--singer-item--ran">
+                                        <i class="fa-solid fa-shuffle"></i>
+                                        góc nhạc
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-container__body-zing">
+                <div class="main-container__body-zing-all-music">
+                    <div class="main-container__body-zing-all-music-title">#zingchart</div>
+                    
+                    <div class="zing-container--music-all-list">
+                        <div class="container--music-all-item">
+                            <div class="zing-container--music-all-item-rank-wrapper">
+                                <span class="zing-container--music-all-item-rank zing-container--music-all-item-rank-1">1</span>
+                                <span class="zing-container--music-all-item-line">-</span>
+                            </div>
+                            <div class="container--music-all-item-info-wrapper">
+                                <div class="container--music-all-item-img-wrapper">
+                                    <div class="container--music-all-item-img" style="background-image: url(./assets/img/music_aichungtinhduocmai.jpg);"></div>
+                                    <div class="container--music-all-item-img-icon"><i class="fa-solid fa-play"></i></div>
+                                </div>
+                                <div class="container--music-all-item-info">
+                                    <div class="container--music-all-item-name">Ai chung tình được mãi</div>
+                                    <div class="container--music-all-item-singer">Đinh Tùng Huy</div>
+                                </div>
+                            </div>
+
+                            <div class="container--music-all-item-option">
+                                <div class="container--music-all-item-film">
+                                    <i class="fa-solid fa-film"></i>
+                                </div>
+
+                                <div class="container--music-all-item-micro">
+                                    <i class="fa-solid fa-microphone"></i>
+                                </div>
+
+                                <div class="container--music-all-item-favourite-wrapper">
+                                    <div class="container--music-all-item-favourite">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                    <div class="container--music-all-item-no-favourite">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div>
+
+                                <div class="container--music-all-item-duration">
+                                    <div class="container--music-all-item-duration-time">05:41</div>
+                                    <div class="container--music-all-item-duration-option"><i class="fa-solid fa-ellipsis"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="zing-container--toggle">
+                        <div class="zing-container-view-add">Xem thêm</div>
+                        <div class="zing-container-hide-music">Ẩn bớt</div>
+                    </div>
+                </div>
+
+                <div class="main-container__body-zing-rank">
+                    <div class="main-container__body-zing-rank-title">Bảng Xếp Hạng Tuần</div>
+                    <div class="main-container__body-zing-rank-Vie">
+                        <div class="main-container__body-zing-rank-Vie-title">Việt Nam</div>
+                        <div class="main-container__body-zing-rank-Vie-list">
+
+                        </div>
+                    </div>
+
+                    <div class="main-container__body-zing-rank-Us">
+                        <div class="main-container__body-zing-rank-Us-title">US-UK</div>
+                        <div class="main-container__body-zing-rank-Us-list">
+                            
+                        </div>
+                    </div>
+
+                    <div class="main-container__body-zing-rank-k">
+                        <div class="main-container__body-zing-rank-k-title">K-Pop</div>
+                        <div class="main-container__body-zing-rank-k-list">
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="main-next-song">
+            <div class="main-next-song__option">
+                <div class="main-next-song__option-wrapper">
+                    <div class="main-next-song__option--active"></div>
+                    <div class="main-next-song__option--playlist">Danh sách phát</div>
+                    <div class="main-next-song__option--history">Nghe gần đây</div>
+                </div>
+            </div>
+
+            <div class="main-next-song__box">
+
+                <div class="main-next-song__box-fist">
+
+                </div>
+
+                <div class="container--music-all-item-wrapper">
+                    <div class="container--music-all-item-title">Tiếp theo</div>
+                    <div class="container--music-all-item-wrapper-list">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="grid main-control-song">
+            <div class="row main-control-song-wrapper">
+                <div class="col l-3 main-control-song-music-wrapper">
+                    <div class="main-control-song-music-img-wrapper">
+                        <div class="main-control-song-music-img"></div>
+                        <div class="box-note-icon box-note-icon-1"><i class="fa-solid fa-music"></i></div>
+                        <div class="box-note-icon box-note-icon-2"><i class="fa-solid fa-music"></i></div>
+                        <div class="box-note-icon box-note-icon-3"><i class="fa-solid fa-music"></i></div>
+                        <div class="box-note-icon box-note-icon-4"><i class="fa-solid fa-music"></i></div>
+                    </div>
+
+    
+                    <div class="main-control-song-music-info">
+                        <marquee class="main-control-song-music-info-name">Ai chung tình được mãi</marquee>
+                        <div class="main-control-song-music-info-singer">Đinh Tùng Huy</div>
+                    </div>
+    
+                    <div class="main-control-song-music-option-wrapper">
+                        <div class="main-control-song-music-option-favourite-wrapper">
+                            <div class="main-control-song-music-option-favourite">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="main-control-song-music-option-no-favourite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+    
+                        <div class="main-control-song-music-option-dot">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-6 main-control-song-control-wrapper">
+
+                    <div class="control">
+                        <div class="btn btn-repeat">
+                            <i class="fas fa-redo"></i>
+                        </div>
+                        <div class="btn btn-prev">
+                            <i class="fas fa-step-backward"></i>
+                        </div>
+                        <div class="btn btn-toggle-play">
+                            <i class="fas fa-pause icon-pause"></i>
+                            <i class="fas fa-play icon-play"></i>
+                        </div>
+                        <div class="btn btn-next">
+                            <i class="fas fa-step-forward"></i>
+                        </div>
+                        <div class="btn btn-random">
+                            <i class="fas fa-random"></i>
+                        </div>
+                    </div>
+        
+                    <div class="controls-time">
+                        <span class="time-left">00:00</span>
+                        <div class="scroll-progress">
+                            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+                            <div class="progress-line"></div>
+                        </div>
+                        <span class="time-right">00:00</span>
+                    </div>
+                </div>
+
+                <div class="col l-3 main-control-song-tech-wrapper">
+                    <div class="main-control-song-tech-film"><i class="fa-solid fa-film"></i></div>
+                    <div class="main-control-song-tech-micro"><i class="fa-solid fa-microphone"></i></div>
+                    <div class="main-control-song-tech-square"><i class="fa-regular fa-square"></i></div>
+
+                    <div class="main-control-song-tech-volum">
+                        <div class="btn-volume-icon">
+                            <i class="fas fa-volume-mute btn-volume btn-volume-0"></i>
+                            <i class="fas fa-volume-down btn-volume btn-volume-50"></i>
+                            <i class="fas fa-volume-up btn-volume btn-volume-100 active"></i>        
+                        </div>
+                        <input class="sound" type="range" value="100" step="1" min="0" max="100">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <audio src="" class="audio" preload="metadata"></audio>
+
+        <div class="modal-music">
+            <div class="modal-music--heading">
+                <img class="modal-music-img" src="./assets/img/logo-zing.png" alt="">
+                <div class="modal-music-close"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="modal-music--cd-wrapper">
+                <div class="modal-music--cd" style="background-image: url(./assets/img/music_aichungtinhduocmai.jpg);"></div>
+            </div>
+    
+            <div class="modal-music--body">
+                <div class="modal-music--body-name">Ai chung tình được mãi</div>
+                <div class="modal-music--body-singer">Đinh Tùng Huy</div>
+            </div>
+    
+            <div class="control-modal">
+                <div class="btn btn-repeat-modal">
+                    <i class="fas fa-redo"></i>
+                </div>
+                <div class="btn btn-prev-modal">
+                    <i class="fas fa-step-backward"></i>
+                </div>
+                <div class="btn btn-toggle-play-modal">
+                    <i class="fas fa-pause icon-pause-modal"></i>
+                    <i class="fas fa-play icon-play-modal"></i>
+                </div>
+                <div class="btn btn-next-modal">
+                    <i class="fas fa-step-forward"></i>
+                </div>
+                <div class="btn btn-random-modal">
+                    <i class="fas fa-random"></i>
+                </div>
+            </div>
+
+            <div class="controls-time-modal">
+                <span class="time-left-modal">00:00</span>
+                <div class="scroll-progress-modal">
+                    <input id="progress-modal" class="progress-modal" type="range" value="0" step="1" min="0" max="100">
+                    <div class="progress-line-modal"></div>
+                </div>
+                <span class="time-right-modal">00:00</span>
+            </div>
+    
+        </div>
+
+    </div>
+
+    
+
+    <div class="modal-theme">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <div class="modal-header--title">Giao diện</div>
+                <div class="modal-header--close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <div class="modal-body--topic">
+                    <div class="modal-body--topic-title">Chủ đề</div>
+                    <ul class="modal-body--topic-list">
+                        <li class="modal-body--topic-item">
+                            <div class="modal-body--topic-item__img-wrapper">
+                                <div class="modal-body--topic-item__img" style="background-image: url(./assets/img/bg-0.jpg);"></div>
+                            </div>
+                            <span class="modal-body--topic-item__name">Zing Music Awards</span>
+                        </li>
+                        <li class="modal-body--topic-item">
+                            <div class="modal-body--topic-item__img-wrapper">
+                                <div class="modal-body--topic-item__img" style="background-image: url(./assets/img/bg-1.jpg);"></div>
+                            </div>
+                            <span class="modal-body--topic-item__name">Tháp Eiffel</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="modal-body--artist">
+                    <div class="modal-body--topic-title">Nghệ sĩ</div>
+                    <ul class="modal-body--topic-list">
+                        <li class="modal-body--topic-item">
+                            <div class="modal-body--topic-item__img-wrapper">
+                                <div class="modal-body--topic-item__img" style="background-image: url(./assets/img/bg-2.jpg);"></div>
+                            </div>
+                            <span class="modal-body--topic-item__name">Rosé</span>
+                        </li>
+                        <li class="modal-body--topic-item">
+                            <div class="modal-body--topic-item__img-wrapper">
+                                <div class="modal-body--topic-item__img" style="background-image: url(./assets/img/bg-3.jpg);"></div>
+                            </div>
+                            <span class="modal-body--topic-item__name">IU</span>
+                        </li>
+                        <li class="modal-body--topic-item">
+                            <div class="modal-body--topic-item__img-wrapper">
+                                <div class="modal-body--topic-item__img" style="background-image: url(./assets/img/bg-4.jpg);"></div>
+                            </div>
+                            <span class="modal-body--topic-item__name">Lisa</span>
+                        </li>
+                        <li class="modal-body--topic-item">
+                            <div class="modal-body--topic-item__img-wrapper">
+                                <div class="modal-body--topic-item__img" style="background-image: url(./assets/img/bg-5.jpg);"></div>
+                            </div>
+                            <span class="modal-body--topic-item__name">Jennie Kim</span>
+                        </li>
+                        <li class="modal-body--topic-item">
+                            <div class="modal-body--topic-item__img-wrapper">
+                                <div class="modal-body--topic-item__img" style="background-image: url(./assets/img/bg-6.jpg);"></div>
+                            </div>
+                            <span class="modal-body--topic-item__name">Jisoo</span>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="modal-body--drak">
+                    <div class="modal-body--topic-title">Màu tối</div>
+                    <ul class="modal-body--topic-list">
+                        <li class="modal-body--topic-item">
+                            <div class="modal-body--topic-item__img-wrapper">
+                                <div class="modal-body--topic-item__img" style="background-image: url(./assets/img/bg-7.jpg);"></div>
+                            </div>
+                            <span class="modal-body--topic-item__name">Tối</span>
+                        </li>
+                        <li class="modal-body--topic-item">
+                            <div class="modal-body--topic-item__img-wrapper">
+                                <div class="modal-body--topic-item__img" style="background-image: url(./assets/img/bg-8.jpg);"></div>
+                            </div>
+                            <span class="modal-body--topic-item__name">Tím</span>
+                        </li>
+                        <li class="modal-body--topic-item">
+                            <div class="modal-body--topic-item__img-wrapper">
+                                <div class="modal-body--topic-item__img" style="background-image: url(./assets/img/bg-9.jpg);"></div>
+                            </div>
+                            <span class="modal-body--topic-item__name">Xanh đậm</span>
+                        </li>
+                        <li class="modal-body--topic-item">
+                            <div class="modal-body--topic-item__img-wrapper">
+                                <div class="modal-body--topic-item__img" style="background-image: url(./assets/img/bg-10.jpg);"></div>
+                            </div>
+                            <span class="modal-body--topic-item__name">Xanh biển</span>
+                        </li>
+                        <li class="modal-body--topic-item">
+                            <div class="modal-body--topic-item__img-wrapper">
+                                <div class="modal-body--topic-item__img" style="background-image: url(./assets/img/bg-11.jpg);"></div>
+                            </div>
+                            <span class="modal-body--topic-item__name">Xanh lá</span>
+                        </li>
+                        <li class="modal-body--topic-item">
+                            <div class="modal-body--topic-item__img-wrapper">
+                                <div class="modal-body--topic-item__img" style="background-image: url(./assets/img/bg-12.jpg);"></div>
+                            </div>
+                            <span class="modal-body--topic-item__name">Nâu</span>
+                        </li>
+                        <li class="modal-body--topic-item">
+                            <div class="modal-body--topic-item__img-wrapper">
+                                <div class="modal-body--topic-item__img" style="background-image: url(./assets/img/bg-13.jpg);"></div>
+                            </div>
+                            <span class="modal-body--topic-item__name">Hồng</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
